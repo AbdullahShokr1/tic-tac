@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tic Tac Toe</title>
+</head>
+<body >
+    <section id="wapper">
+    <!--Start Setting Player-->
+    <section id="players">
+        <table class="players">
+            <tr>
+                <th>Players</th>
+                <th>Mark</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>Player 1</td>
+                <td>X</td>
+                <td id="scorep1">0</td>
+            </tr>
+            <tr>
+                <td>Player 2</td>
+                <td>O</td>
+                <td id="scorep2">0</td>
+            </tr>
+        </table>
+        <section class="btn">
+            <button onclick="playAgain()">Play Again</button>
+            <button id="Reset" onclick="restGame()">Reset From Start</button> 
+        </section>
+    </section>
+    <!--End Setting Player-->
+    <!--Start Setting The Game-->
+    <section id="game">
+        <section class="row">
+            <section class="box"></section>
+            <section class="box"></section>
+            <section class="box"></section>
+        </section>
+        <section class="row">
+            <section class="box"></section>
+            <section class="box"></section>
+            <section class="box"></section>
+        </section>
+        <section class="row">
+            <section class="box"></section>
+            <section class="box"></section>
+            <section class="box"></section>
+        </section>
+    </section>
+    <!--End Setting The Game-->
+    </section>
+    <!--Message For Winner-->
+    <section id="winner">
+        <section id="playerName">The Player 1 is Winner</section>
+        <section>
+            <button onclick="playAgain()">Play Again</button>
+            <button onclick="restGame()">End Game</button>
+        </section>
+        
+    </section>
+</body>
+<script src="js/games.js"></script>
+</html>
