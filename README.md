@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Tic Tac
 
 ## Create XO by Pure Javascript
 
